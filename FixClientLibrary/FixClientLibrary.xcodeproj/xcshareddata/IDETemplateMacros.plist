@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FILEHEADER</key>
+	<string> -------- -------- -------- -------- -------- -------- -------- --------
+//
+// ___FILENAME___
+// ___PACKAGENAME___
+//
+// Copyright © ___YEAR___ OpenYield, Inc.
+//
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://opensource.org/licenses/MIT.
+//
+// -------- -------- -------- -------- -------- -------- -------- --------</string>
+</dict>
+</plist>
