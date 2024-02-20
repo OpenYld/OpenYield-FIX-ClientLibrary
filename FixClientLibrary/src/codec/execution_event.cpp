@@ -110,7 +110,7 @@ namespace FixClient {
       ) {
         FillEventModel payload;
         
-        if ( ordStatus == FIX::OrdStatus_PARTIALLY_FILLED) {
+        if (ordStatus == FIX::OrdStatus_PARTIALLY_FILLED) {
           payload.status = "PartialFill";
         } else {
           payload.status = "CompleteFill";
