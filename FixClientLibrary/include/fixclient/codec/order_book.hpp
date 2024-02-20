@@ -24,7 +24,7 @@
 // This feed provides the Order Book in the form of a FIX IOI message. Each
 // order has a unique ID so you can map messages to your order book or
 // aggregation handler. Each order price is what you can execute at. Your
-// own orders as set as "isMine".
+// own orders are set as "isMine".
 //
 // -------- -------- -------- -------- -------- -------- -------- --------
 
@@ -64,7 +64,6 @@ namespace FixClient {
     // Order Yield
     double yield;
     
-    // True if the order is one of mine
     // Values are
     //   NotMine
     //   IsMine

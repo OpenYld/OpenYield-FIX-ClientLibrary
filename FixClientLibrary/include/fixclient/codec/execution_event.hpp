@@ -140,7 +140,7 @@ namespace FixClient {
     // Settlement date in ISO Date format
     std::string settlementDate;
     
-    // Cumulative quantity for all filss on this order
+    // Cumulative quantity for all fills on this order
     double cumulativeQuantity;
     
     // Average price for all fills on this order
