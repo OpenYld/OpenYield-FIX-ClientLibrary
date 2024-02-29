@@ -177,6 +177,12 @@ namespace FixClient {
             noPartiesGroup.get(partyId);
             payload.executedBy = partyId;
           }
+
+          if (partyRole == FIX::PartyRole_CUSTOMER_ACCOUNT) {
+            noPartiesGroup.get(partyId);
+            payload.subscriberAccount = partyId;
+          }
+
         }
         
         switch (side) {

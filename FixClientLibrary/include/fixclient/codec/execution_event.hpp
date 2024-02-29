@@ -109,6 +109,9 @@ namespace FixClient {
 
     // Optionally a clearing account
     std::string contraClearingAccount;
+    
+    // A reflected back code send by the subscriber
+    std::string subscriberAccount;
 
     // Where it executed (for now always OYLD)
     std::string executedBy;
