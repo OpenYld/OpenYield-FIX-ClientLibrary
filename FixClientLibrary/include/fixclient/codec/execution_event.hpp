@@ -105,10 +105,10 @@ namespace FixClient {
     std::string executionCode;
     
     // Who we will face
-    std::string contraPartyCode;
+    std::string contraClearingMpid;
 
-    // Or their clearing
-    std::string contraClearingCode;
+    // Optionally a clearing account
+    std::string contraClearingAccount;
 
     // Where it executed (for now always OYLD)
     std::string executedBy;

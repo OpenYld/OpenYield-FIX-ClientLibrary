@@ -43,8 +43,6 @@
 		3C38900D2B84DBE700761CE0 /* order.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = order.cpp; sourceTree = "<group>"; };
 		3C38900E2B84DBE700761CE0 /* order.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = order.hpp; sourceTree = "<group>"; };
 		3C9178DE2B8275D000A250D0 /* libFixClientLibrary.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFixClientLibrary.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C9178F92B827BF400A250D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3C9179042B827ED700A250D0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3C9179062B82801F00A250D0 /* fixclient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fixclient.hpp; sourceTree = "<group>"; };
 		3C91790A2B8280CA00A250D0 /* quickfix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quickfix.hpp; sourceTree = "<group>"; };
 		3C91790D2B82822800A250D0 /* fix_engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fix_engine.cpp; sourceTree = "<group>"; };
@@ -121,8 +119,6 @@
 			children = (
 				3C9178F62B827BF400A250D0 /* doc */,
 				3C9178F72B827BF400A250D0 /* include */,
-				3C9179042B827ED700A250D0 /* LICENSE */,
-				3C9178F92B827BF400A250D0 /* README.md */,
 				3C9178FA2B827BF400A250D0 /* src */,
 				3C9178DF2B8275D000A250D0 /* Products */,
 				3CE87FB12B83E748001A2E7E /* Frameworks */,

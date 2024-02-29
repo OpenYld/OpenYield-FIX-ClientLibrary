@@ -156,14 +156,21 @@ namespace FixClient {
           message.getGroup(i, noPartiesGroup);
           noPartiesGroup.get(partyRole);
           
-          if (partyRole == FIX::PartyRole_CONTRA_FIRM) {
-            noPartiesGroup.get(partyId);
-            payload.contraPartyCode = partyId;
-          }
-
           if (partyRole == FIX::PartyRole_CONTRA_CLEARING_FIRM) {
             noPartiesGroup.get(partyId);
-            payload.contraClearingCode = partyId;
+            payload.contraClearingMpid = partyId;
+            
+            FIX::NoPartySubIDs noPartySubIds;
+            FIX44::ExecutionReport::NoPartyIDs::NoPartySubIDs
+              noPartySubIDsGroup;
+            FIX::PartySubID partySubID;
+            
+            noPartiesGroup.get(noPartySubIds);
+            if (noPartySubIds > 0) {
+              message.getGroup(1, noPartySubIDsGroup);
+              noPartySubIDsGroup.get(partySubID);
+              payload.contraClearingAccount = partySubID;
+            }
           }
 
           if (partyRole == FIX::PartyRole_EXECUTING_FIRM) {
