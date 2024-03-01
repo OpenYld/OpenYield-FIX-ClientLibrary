@@ -160,16 +160,19 @@ namespace FixClient {
             noPartiesGroup.get(partyId);
             payload.contraClearingMpid = partyId;
             
-            FIX::NoPartySubIDs noPartySubIds;
-            FIX44::ExecutionReport::NoPartyIDs::NoPartySubIDs
-              noPartySubIDsGroup;
-            FIX::PartySubID partySubID;
-            
-            noPartiesGroup.get(noPartySubIds);
-            if (noPartySubIds > 0) {
-              message.getGroup(1, noPartySubIDsGroup);
-              noPartySubIDsGroup.get(partySubID);
-              payload.contraClearingAccount = partySubID;
+            // May not be set
+            if (noPartiesGroup.isSetField(802)) {
+              FIX::NoPartySubIDs noPartySubIds;
+              FIX44::ExecutionReport::NoPartyIDs::NoPartySubIDs
+                noPartySubIDsGroup;
+              FIX::PartySubID partySubID;
+              
+              noPartiesGroup.get(noPartySubIds);
+              if (noPartySubIds > 0) {
+                message.getGroup(1, noPartySubIDsGroup);
+                noPartySubIDsGroup.get(partySubID);
+                payload.contraClearingAccount = partySubID;
+              }
             }
           }
 
