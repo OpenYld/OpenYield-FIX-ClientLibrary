@@ -156,7 +156,7 @@ namespace FixClient {
           message.getGroup(i, noPartiesGroup);
           noPartiesGroup.get(partyRole);
           
-          if (partyRole == FIX::PartyRole_CONTRA_CLEARING_FIRM) {
+          if (partyRole == FIX::PartyRole_CONTRA_FIRM) {
             noPartiesGroup.get(partyId);
             payload.contraClearingMpid = partyId;
             
