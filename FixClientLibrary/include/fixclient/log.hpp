@@ -14,7 +14,7 @@
 #pragma once
 
 #ifdef SCAFFOLD
-  #include <core/log/log.hpp>
+  #include <core/auxiliary/log.hpp>
 #else
   #include <iostream>
 #endif
