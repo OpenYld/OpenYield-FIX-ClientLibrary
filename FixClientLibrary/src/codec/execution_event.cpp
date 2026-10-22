@@ -257,7 +257,7 @@ namespace FixClient {
       message.get(netMoney);
       
       PostTradeEventModel payload = {
-        .status = "Cancel",
+        .status = "Correct",
         .executionCode = execRefId,
         .quantity = lastQty,
         .price = lastPx,

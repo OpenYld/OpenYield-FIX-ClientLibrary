@@ -13,7 +13,7 @@
 
 #include <regex>
 
-#include <fmt/core.h>
+#include <fmt/format.h>
 
 #include "fix_engine.hpp"
 
